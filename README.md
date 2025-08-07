@@ -1,6 +1,6 @@
 # 🌌 Marte - Plantilla Next.js
 
-Bienvenido a **Marte**, una plantilla mockup lista para ser personalizada. Forma parte de una serie de templates inspirados en los planetas del sistema solar. Esta plantilla está construida con **Next.js, Tailwind CSS, GSAP y TypeScript** y está licenciada bajo **MIT**.
+Bienvenido a **Marte**, una plantilla mockup lista para ser personalizada. Forma parte de una serie de templates inspirados en los planetas del sistema solar. Esta plantilla está construida con **Next.js, Tailwind CSS y TypeScript** y está licenciada bajo **MIT**.
 
 ## 🚀 Características
 
@@ -54,6 +54,8 @@ Para exportar el proyecto y subirlo a **GitHub**, sigue estos pasos:
 ## 📖 Más Información
 
 Para más detalles, visita la [documentación oficial de Next.js](https://nextjs.org/) o únete a la [comunidad en Discord](https://discord.com/invite/nextjs).
+
+![Website](./public/screenshots/mars.png)
 
 ---
 
