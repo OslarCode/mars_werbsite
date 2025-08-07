@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables CSS personalizadas */
+:root {
+  --background-rgb: 240, 231, 231;
+  --foreground-rgb: 69, 24, 4;
+  --background-start-rgb: 193, 68, 14;
+  --background-end-rgb: 231, 125, 17;
+  --background-origin: 253, 166, 0;
+}
+
+/* Ajustes globales */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow: hidden; /* Evitamos scroll accidental vertical */
+}
+
+/* Contenedor para scroll horizontal */
+.horizontal-scroll-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Ocultar scrollbars */
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+.horizontal-scroll-container {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE y Edge */
+}
+
+/* Cada sección debe ocupar pantalla completa y alinearse bien */
+.horizontal-section {
+  flex-shrink: 0;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+/* Sección de galería específica (puede heredar de horizontal-section) */
+.gallery-section {
+  @apply horizontal-section flex items-center justify-center;
+}
+
+.my-masonry-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.my-masonry-grid_column {
+  background-clip: padding-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
